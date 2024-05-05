@@ -1,4 +1,6 @@
 import type { Config } from "tailwindcss";
+import defaultTheme from "tailwindcss/defaultTheme";
+import colors, { gray, violet } from "tailwindcss/colors";
 
 const config: Config = {
   content: [
@@ -8,11 +10,27 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        primary: {
+          light: violet[200],
+          DEFAULT: violet[500],
+          dark: violet[800],
+        },
+        secondary: {
+          light: "#FFB800",
+          DEFAULT: "#FF9700",
+          dark: "#CB7800",
+        },
+        gray: {
+          light: gray[200],
+          DEFAULT: gray[400],
+          dark: gray[600],
+        },
       },
+    },
+    screens: {
+      xs: "375px",
+      ...defaultTheme.screens,
     },
   },
   plugins: [],
