@@ -1,3 +1,9 @@
+import Navbar from "./ui/navbar";
+
 export default function Home() {
-  return <main className="border-2 border-secondary w-full h-[300px]"></main>;
+  return (
+    <main className="w-full h-full">
+      <Navbar />
+    </main>
+  );
 }
