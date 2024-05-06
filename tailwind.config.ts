@@ -22,7 +22,7 @@ const config: Config = {
           dark: "#CB7800",
         },
         gray: {
-          light: gray[200],
+          light: gray[100],
           DEFAULT: gray[400],
           dark: gray[600],
         },
