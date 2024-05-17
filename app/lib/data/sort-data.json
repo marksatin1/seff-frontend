@@ -1,0 +1,22 @@
+[
+  {
+    "name": "price",
+    "options": ["low to high", "high to low"]
+  },
+  {
+    "name": "pickup",
+    "options": ["True", "False"]
+  },
+  {
+    "name": "shipping",
+    "options": ["True", "False"]
+  },
+  {
+    "name": "locality",
+    "options": ["National", "International"]
+  },
+  {
+    "name": "reviews",
+    "options": ["5", "4", "3", "2", "1"]
+  }
+]
