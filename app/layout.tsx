@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-gray-light">
+    <html lang="en" className="bg-neutral-light">
       <body className={`${poppins.className} w-screen h-screen flex flex-col`}>
         <div className="relative top-0 left-0 right-0">
           <Header />
