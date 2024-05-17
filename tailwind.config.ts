@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 import defaultTheme from "tailwindcss/defaultTheme";
-import colors, { gray, violet } from "tailwindcss/colors";
+import { gray, violet } from "tailwindcss/colors";
 
 const config: Config = {
   content: [
@@ -21,7 +21,7 @@ const config: Config = {
           DEFAULT: "#FF9700",
           dark: "#CB7800",
         },
-        gray: {
+        neutral: {
           light: gray[100],
           DEFAULT: gray[400],
           dark: gray[600],
