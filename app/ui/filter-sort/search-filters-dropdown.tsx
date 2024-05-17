@@ -1,10 +1,9 @@
 "use client";
 
 import { useState, useReducer } from "react";
-import filterData from "../lib/data/filter-data.json";
-import { Filter } from "../lib/definitions";
+import filterData from "../../lib/data/filter-data.json";
+import { Filter } from "../../lib/definitions";
 import Image from "next/image";
-import Link from "next/link";
 
 export type SearchFiltersState = {
   openFilters: string[];
