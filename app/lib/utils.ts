@@ -5,3 +5,15 @@ export function transformJSONtoJS(json: any[]) {
     return acc;
   }, []);
 }
+
+export function transformPriceToString(price: number) {
+  const newPrice = String(price).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  return newPrice;
+}
+
+export function transformPriceRangetoString(priceLow: number, priceHigh: number) {
+  const newLow = priceLow / 1000;
+  const newHigh = priceHigh / 1000;
+
+  return `${newLow}k - ${newHigh}k`;
+}
