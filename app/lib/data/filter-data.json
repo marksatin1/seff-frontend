@@ -1,30 +1,30 @@
 [
   {
-    "name": "Offers",
+    "name": "offers",
     "options": ["Clearance/Closeout", "Offer Code", "Sales & Discounts"]
   },
   {
-    "name": "Category",
+    "name": "category",
     "options": ["Accessories", "Belts", "Boots", "Bracelets", "Coats", "Dresses"]
   },
   {
-    "name": "Size",
+    "name": "size",
     "options": ["Small", "Medium", "Large", "X-Large"]
   },
   {
-    "name": "Price",
+    "name": "price",
     "options": ["Under $50", "$50 - $100", "$100 - $250", "$250 - $500"]
   },
   {
-    "name": "Department",
+    "name": "department",
     "options": ["Men's", "Women's"]
   },
   {
-    "name": "Color",
+    "name": "color",
     "options": ["Blue", "Green", "Red", "Yellow", "Pink", "Black"]
   },
   {
-    "name": "Fabric",
+    "name": "fabric",
     "options": ["Cotton", "Silk", "Denim", "Linen"]
   }
 ]
