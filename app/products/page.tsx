@@ -1,11 +1,20 @@
-import FilterBar from "@/app/ui/filter-sort/filter-bar";
-import SortBar from "../ui/filter-sort/sort-bar";
+import Metrics from "../ui/Metrics";
+import FilterBar from "../ui/filter-sort/filter-bar";
+import NewOptions from "../ui/new-options";
+import PreOwnedOptions from "../ui/pre-owned-options";
+import PriceHistory from "../ui/price-history";
+import Search from "../ui/search";
 
-export default function SearchResultsPage() {
+export default function ProductsPage() {
   return (
-    <div className="w-full h-full">
+    <div className="flex flex-col gap-5">
+      <Search />
       <FilterBar />
-      <SortBar />
+      <Metrics />
+      <hr />
+      <NewOptions />
+      <PriceHistory />
+      <PreOwnedOptions />
     </div>
   );
 }
