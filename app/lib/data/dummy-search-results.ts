@@ -1,4 +1,6 @@
-export const newSearchResults = [
+import { NewSearchResultPropTypes } from "../definitions";
+
+export const newSearchResults: NewSearchResultPropTypes[] = [
   {
     brandLogoPath: "/logos/chrono.svg",
     authScore: 55,
