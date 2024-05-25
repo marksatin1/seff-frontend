@@ -32,9 +32,9 @@ export default function NewSearchResult({
               <path
                 d="M8 10L13.0008 14.58L18 10"
                 stroke="#000000"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </article>
