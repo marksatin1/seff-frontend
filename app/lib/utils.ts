@@ -1,3 +1,5 @@
+import { NewSearchResultPropTypes } from "./definitions";
+
 // what are types for these params?
 export function transformJSONtoJS(json: any[]) {
   return json.reduce((acc: any, item: any) => {
@@ -16,4 +18,14 @@ export function transformPriceRangetoString(priceLow: number, priceHigh: number)
   const newHigh = priceHigh / 1000;
 
   return `${newLow}k - ${newHigh}k`;
+}
+
+export function filterResultsList(searchResults: NewSearchResultPropTypes[], query: string) {
+  if (Array.isArray(searchResults)) {
+    return searchResults.filter((res: NewSearchResultPropTypes) => {
+      return res.brandLogoPath.toLowerCase().includes(query.toLowerCase());
+    });
+  } else {
+    return [];
+  }
 }
