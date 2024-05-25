@@ -12,9 +12,9 @@ export default function Sorter() {
           <path
             d="M10.6875 4.78125L13.2188 2.25M13.2188 2.25L15.75 4.78125M13.2188 2.25L13.2187 15.75M7.3125 13.2188L4.78125 15.75M4.78125 15.75L2.25 13.2188M4.78125 15.75L4.78125 2.25"
             stroke="#4D16A7"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </svg>
         <p className="text-nowrap">Sort by</p>

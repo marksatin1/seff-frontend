@@ -1,4 +1,4 @@
-import Search from "./ui/search";
+import SearchBar from "./ui/search/search-bar";
 
 export default function LandingPage() {
   return (
@@ -12,7 +12,7 @@ export default function LandingPage() {
         <span className="block font-bold text-2xl leading-8 tracking-widest">ALL OVER</span>
         <span className="block">the world!</span>
       </h1>
-      <Search />
+      <SearchBar />
     </section>
   );
 }
