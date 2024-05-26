@@ -3,14 +3,14 @@
 import Image from "next/image";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
-export default function Search() {
+export default function SearchBar() {
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const { replace } = useRouter();
 
   function handleSearch(searchTerm: string) {
     const params = new URLSearchParams(searchParams);
-    
+
     if (searchTerm) {
       params.set("query", searchTerm);
     } else {
@@ -21,7 +21,7 @@ export default function Search() {
   }
 
   return (
-    <form className="shadow-md">
+    <form className="w-full shadow-md">
       <div className="border-2 border-neutral-dark rounded-md px-4 pt-2 pb-4 bg-white">
         <div className="flex items-center">
           <Image src="/icons/search.svg" width={24} height={24} alt="Magnifying glass icon" />
