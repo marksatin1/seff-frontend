@@ -5,7 +5,7 @@ export default function FilterBar() {
   return (
     <div className="flex gap-1 overflow-x-scroll no-scrollbar">
       {filterData.map((fd: any, idx: number) => (
-        <FilterDropdown key={`${fd}-${idx}`} type="filter" name={fd.name} options={fd.options} />
+        <FilterDropdown key={`${fd}-${idx}`} name={fd.name} options={fd.options} />
       ))}
     </div>
   );

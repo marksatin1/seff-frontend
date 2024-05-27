@@ -1,5 +1,5 @@
 export default function AuthScoreChip({ authScore }: { authScore: number }) {
-  const tagClasses =
+  const chipColors =
     authScore < 50
       ? "bg-error-light text-error"
       : authScore > 50 && authScore < 80
@@ -7,14 +7,14 @@ export default function AuthScoreChip({ authScore }: { authScore: number }) {
       : "bg-success-light text-success";
 
   const iconColor =
-    authScore < 50 ? "#FA012C" : authScore > 50 && authScore < 80 ? "#E1A800" : "#31A64F";
+    authScore < 50 ? "#DC2626" : authScore > 50 && authScore < 80 ? "#EAB308" : "#16A34A";
 
   return (
-    <div className={`w-fit flex gap-2 rounded-full px-2 py-1 ${tagClasses}`}>
+    <div className={`w-fit flex items-center gap-1 rounded-full px-2 py-1 ${chipColors}`}>
       <p className="text-xs text-nowrap">{authScore}% authenticity score</p>
       <svg
-        width="18"
-        height="18"
+        width="16"
+        height="16"
         viewBox="0 0 18 18"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

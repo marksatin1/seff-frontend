@@ -1,7 +1,7 @@
 export default function Sorter() {
   return (
-    <div className="flex text-primary-dark justify-end items-end">
-      <div className="flex items-center gap-2 py-6">
+    <button type="button" className="flex justify-end items-end">
+      <div className="flex items-center gap-1">
         <svg
           width="24"
           height="24"
@@ -17,8 +17,8 @@ export default function Sorter() {
             strokeLinejoin="round"
           />
         </svg>
-        <p className="text-nowrap">Sort by</p>
+        <p className="text-primary-dark text-nowrap">Sort by</p>
       </div>
-    </div>
+    </button>
   );
 }

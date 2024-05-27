@@ -1,9 +1,8 @@
-import Metrics from "../ui/Metrics";
-import FilterBar from "../ui/filter-sort/filter-bar";
-import NewOptions from "../ui/new-options";
-import PreOwnedOptions from "../ui/pre-owned-options";
-import PriceHistory from "../ui/price-history";
+import NewOptions from "../ui/results/new-options";
+import PreOwnedOptions from "../ui/results/pre-owned-options";
+import PriceHistoryBanner from "../ui/banners/price-history-banner";
 import Search from "../ui/search/search";
+import CtaBanner from "../ui/banners/cta-banner";
 
 export default function ProductsPage({
   searchParams,
@@ -16,13 +15,14 @@ export default function ProductsPage({
   const query = searchParams?.query || "";
 
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-col gap-3">
       <Search query={query} />
-      <FilterBar />
-      <Metrics />
-      <hr />
+      <div className="">
+        <hr />
+      </div>
+      <CtaBanner />
       <NewOptions />
-      <PriceHistory />
+      <PriceHistoryBanner />
       <PreOwnedOptions />
     </div>
   );
