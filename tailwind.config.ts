@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 import defaultTheme from "tailwindcss/defaultTheme";
-import { gray, violet } from "tailwindcss/colors";
+import { amber, gray, green, purple, red, slate, violet, yellow } from "tailwindcss/colors";
 
 const config: Config = {
   content: [
@@ -12,35 +12,31 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          light: "#F8F4FF",
+          light: purple[100],
           DEFAULT: violet[500],
-          dark: "#4D16A7",
+          dark: violet[800],
         },
         secondary: {
-          light: "#FFB800",
-          DEFAULT: "#FF9700",
-          dark: "#CB7800",
+          light: amber[400],
+          DEFAULT: amber[500],
+          dark: amber[600],
         },
-        accent: {
-          light: "#FFEEF7",
-          DEFAULT: "#FF018A",
-        },
-        neutral: {
-          light: "#F6F8FA",
-          DEFAULT: "#ECEEF3",
-          dark: "#8384AD",
+        paper: {
+          light: gray[100],
+          DEFAULT: gray[300],
+          dark: slate[500],
         },
         error: {
-          light: "#FFF2F1",
-          DEFAULT: "#FA012C",
+          light: red[100],
+          DEFAULT: red[600],
         },
         warning: {
-          light: "#FFF7E1",
-          DEFAULT: "#E1A800",
+          light: yellow[100],
+          DEFAULT: yellow[500],
         },
         success: {
-          light: "#ECFAF0",
-          DEFAULT: "#31A64F",
+          light: green[100],
+          DEFAULT: green[600],
         },
       },
     },
