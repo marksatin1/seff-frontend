@@ -1,51 +1,134 @@
-import { NewSearchResultPropTypes } from "../definitions";
+import { ExtraSavingsType, NewSearchResultType } from "../definitions";
 
-export const newSearchResults: NewSearchResultPropTypes[] = [
+export const newSearchResults: NewSearchResultType[] = [
   {
-    brandLogoPath: "/logos/chrono.svg",
+    sellerLogo: {
+      path: "/logos/chrono.svg",
+      width: 90,
+      height: 47,
+      description: "Chrono24 logo",
+    },
     authScore: 55,
     price: 3500,
-    layawayLogoPath: "/logos/klarna.svg",
+    financierLogo: {
+      path: "/logos/klarna.svg",
+      width: 68,
+      height: 36,
+      description: "Klarna logo",
+    },
   },
   {
-    brandLogoPath: "/logos/neiman.svg",
+    sellerLogo: {
+      path: "/logos/neiman.svg",
+      width: 90,
+      height: 35,
+      description: "Neiman Marcus logo",
+    },
     authScore: 100,
     price: 3500,
-    layawayLogoPath: "/logos/paypal.svg",
+    financierLogo: {
+      path: "/logos/paypal.svg",
+      width: 63,
+      height: 22,
+      description: "PayPal Credit logo",
+    },
   },
   {
-    brandLogoPath: "/logos/bergdorf.svg",
+    sellerLogo: {
+      path: "/logos/bergdorf.svg",
+      width: 90,
+      height: 34,
+      description: "Bergdorf Goodman logo",
+    },
     authScore: 100,
     price: 4500,
-    layawayLogoPath: "/logos/afterpay.svg",
+    financierLogo: {
+      path: "/logos/afterpay.svg",
+      width: 63,
+      height: 22,
+      description: "Afterpay logo",
+    },
   },
   {
-    brandLogoPath: "/logos/harrods.svg",
+    sellerLogo: {
+      path: "/logos/harrods.svg",
+      width: 90,
+      height: 40,
+      description: "Harrod's logo",
+    },
     authScore: 68,
     price: 10000,
-    layawayLogoPath: "",
   },
 ];
 
+export const extraSavings: ExtraSavingsType = {
+  discount: "10%",
+  savingsLogos: [
+    {
+      path: "/logos/rakuten.svg",
+      width: 96,
+      height: 96,
+      description: "Rakuten logo icon",
+    },
+    {
+      path: "/logos/honey.svg",
+      width: 96,
+      height: 96,
+      description: "Honey logo icon",
+    },
+    {
+      path: "/logos/checkmate.svg",
+      width: 320,
+      height: 96,
+      description: "Checkmate logo icon",
+    },
+  ],
+};
+
 export const preOwnedSearchResults = [
   {
-    brandLogoPath: "/logos/ebay.svg",
+    sellerLogo: {
+      path: "/logos/ebay.svg",
+      width: 90,
+      height: 36,
+      description: "Ebay logo",
+    },
     authScore: 55,
     hits: "5 hits",
-    layawayLogoPath: "/logos/paypal.svg",
+    financierLogo: {
+      path: "/logos/paypal.svg",
+      width: 63,
+      height: 22,
+      description: "PayPal logo",
+    },
     priceLow: 3500,
     priceHigh: 15000,
   },
   {
-    brandLogoPath: "/logos/therealreal.svg",
+    sellerLogo: {
+      path: "/logos/therealreal.svg",
+      width: 90,
+      height: 50,
+      description: "The Real Real logo",
+    },
     authScore: 100,
     hits: "3 hits",
-    layawayLogoPath: "/logos/klarna.svg",
+    financierLogo: {
+      path: "/logos/klarna.svg",
+      width: 68,
+      height: 36,
+      description: "Klarna logo",
+    },
     priceLow: 4000,
     priceHigh: 15000,
   },
   {
-    brandLogoPath: "/logos/fbmarketplace.svg",
+    sellerLogo: {
+      path: "/logos/fbmarketplace.svg",
+      width: 90,
+      height: 29,
+      description: "Facebook Marketplace logo",
+    },
     authScore: 0,
     hits: "3 hits (locally)",
     layawayLogoPath: "",
