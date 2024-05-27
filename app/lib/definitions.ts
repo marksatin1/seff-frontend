@@ -1,29 +1,40 @@
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
+export type ImageType = {
+  path: string;
+  width: number;
+  height: number;
+  description: string;
+};
 
 export type Filter = {
   name: string;
   options: string[];
 };
 
-export type Sort = {
+export type MetricButtonType = {
+  iconPath: string;
   name: string;
-  options: string[];
+  href: string;
 };
 
-export type NewSearchResultPropTypes = {
-  brandLogoPath: string;
+export type NewSearchResultType = {
+  sellerLogo: ImageType;
   authScore: number;
   price: number;
   offer?: string;
   promotion?: string;
-  layawayLogoPath: string;
+  financierLogo?: ImageType;
 };
 
-export type PreOwnedSearchResultPropTypes = {
-  brandLogoPath: string;
+export type PreOwnedSearchResultType = {
+  sellerLogo: ImageType;
   authScore: number;
   hits: string;
   priceLow: number;
   priceHigh: number;
-  layawayLogoPath: string;
+  financierLogo?: ImageType;
+};
+
+export type ExtraSavingsType = {
+  discount: string;
+  savingsLogos: ImageType[];
 };
